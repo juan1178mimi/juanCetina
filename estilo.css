@@ -1,0 +1,142 @@
+* {
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+/* Contenedor central */
+.container {
+    width: 100%;
+    max-width: 980px;
+    border-radius: 10px;
+    padding: 28px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Botones de tema */
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Contenido */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Área de demostración */
+.demo-image {
+    width: 200px;
+    height: 150px;
+    background-color: #ddd;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Contador */
+.counter {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== Temas ===== */
+
+/* Tema Claro */
+.tema-claro {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.tema-claro .container {
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+.tema-claro button {
+    background-color: #7ec4c4;
+    color: #fff;
+}
+
+.tema-claro .counter {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Tema Oscuro */
+.tema-oscuro {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.tema-oscuro .container {
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+}
+
+.tema-oscuro button {
+    background-color: #7ec4c4;
+    color: #000;
+}
+
+.tema-oscuro .counter {
+    background-color: #333;
+    color: #7ec4c4;
+}
+
+/* Tema Amarillo */
+.tema-color {
+    background-color: #d9ec0b;
+    color: #fff;
+}
+
+.tema-color .container {
+    background-color: #e36ef0;
+    border: 2px solid #e36ef0;
+}
+
+.tema-color button {
+    background-color: #f06e7f;
+    color: #fff;
+}
+
+.tema-color .counter {
+    background-color: #6ef0cf;
+    color: #fff;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #7b5b5b;
+    text-align: center;
+}
