@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Grid CSS</title>
+    <link rel="stylesheet" href="css/grid_base.css">
+</head>
+
+<body class="page-container">
+    <!-- Menú lateral -->
+    <nav class="menu">
+        <ul>
+            <li><button onclick="showSection('full-bleed')">Full Bleed</button></li>
+            <li><button onclick="showSection('six-cards')">Six Cards</button></li>
+            <li><button onclick="showSection('gallery')">Gallery</button></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="content">
+        <!-- Sección Full Bleed -->
+        <section id="full-bleed" class="section active">
+            <h1>Full Bleed Section</h1>
+            <p>
+                Este es un ejemplo de diseño donde una imagen o contenido se expande completamente 
+                a lo ancho de la pantalla, ocupando todo el espacio disponible.
+            </p>
+            <img src="https://picsum.photos/1200/400" alt="Full Bleed Example" class="img-full">
+        </section>
+
+        <!-- Sección Six Cards -->
+        <section id="six-cards" class="section">
+            <h1>Sección de Seis Tarjetas</h1>
+            <div class="cards-grid">
+                <div class="card"><img src="https://picsum.photos/200" alt=""><p>Vista perfecta</p></div>
+                <div class="card"><img src="https://picsum.photos/201" alt=""><p>Sin tarifas ocultas</p></div>
+                <div class="card"><img src="https://picsum.photos/202" alt=""><p>Diseño moderno</p></div>
+                <div class="card"><img src="https://picsum.photos/203" alt=""><p>Buena ubicación</p></div>
+                <div class="card"><img src="https://picsum.photos/204" alt=""><p>Ambiente natural</p></div>
+                <div class="card"><img src="https://picsum.photos/205" alt=""><p>Comodidad total</p></div>
+                <div class="card"><img src="https://picsum.photos/206" alt=""><p>Vista perfecta</p></div>
+                <div class="card"><img src="https://picsum.photos/207" alt=""><p>Sin tarifas ocultas</p></div>
+                <div class="card"><img src="https://picsum.photos/208" alt=""><p>Diseño moderno</p></div>
+                <div class="card"><img src="https://picsum.photos/209" alt=""><p>Buena ubicación</p></div>
+                <div class="card"><img src="https://picsum.photos/210" alt=""><p>Ambiente natural</p></div>
+                <div class="card"><img src="https://picsum.photos/211" alt=""><p>Comodidad total</p></div>
+                
+            </div>
+        </section>
+
+        <!-- Sección Gallery -->
+        <section id="gallery" class="section">
+            <h1>Galería de Imágenes</h1>
+            <div class="gallery-grid">
+                <img src="https://picsum.photos/300?1" alt="">
+                <img src="https://picsum.photos/300?2" alt="">
+                <img src="https://picsum.photos/300?3" alt="">
+                <img src="https://picsum.photos/300?4" alt="">
+                <img src="https://picsum.photos/300?5" alt="">
+                <img src="https://picsum.photos/300?6" alt="">
+                <img src="https://picsum.photos/300?7" alt="">
+                <img src="https://picsum.photos/300?8" alt="">
+                <img src="https://picsum.photos/300?9" alt="">
+                <img src="https://picsum.photos/300?10" alt="">
+                <img src="https://picsum.photos/300?11" alt="">
+                <img src="https://picsum.photos/300?12" alt="">
+                <img src="https://picsum.photos/300?13" alt="">
+                <img src="https://picsum.photos/300?14" alt="">
+                <img src="https://picsum.photos/300?15" alt="">
+                <img src="https://picsum.photos/300?16" alt="">
+                <img src="https://picsum.photos/300?17" alt="">
+                <img src="https://picsum.photos/300?18" alt="">
+                <img src="https://picsum.photos/300?19" alt="">
+                <img src="https://picsum.photos/300?20" alt="">
+                <img src="https://picsum.photos/300?21" alt="">
+                <img src="https://picsum.photos/300?22" alt="">
+                <img src="https://picsum.photos/300?23" alt="">
+                <img src="https://picsum.photos/300?24" alt="">
+                <img src="https://picsum.photos/300?25" alt="">
+                <img src="https://picsum.photos/300?26" alt="">
+                <img src="https://picsum.photos/300?27" alt="">
+                <img src="https://picsum.photos/300?28" alt="">
+                <img src="https://picsum.photos/300?29" alt="">
+                <img src="https://picsum.photos/300?30" alt="">
+                <img src="https://picsum.photos/300?31" alt="">
+                <img src="https://picsum.photos/300?32" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>Ejemplo de Grid Layout en CSS Juan Cetina - 2025</p>
+    </footer>
+
+    <script src="grid.js"></script>
+</body>
+</html>

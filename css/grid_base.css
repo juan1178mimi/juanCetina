@@ -1,0 +1,155 @@
+:root {
+    --color-sand: #db6e00db;
+    --color-creme: #20c5e6;
+    --color-olive: #f41af0;
+    --color-black: #000000;
+    --color-grey: #c04646;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- GRID PRINCIPAL --- */
+.page-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas:
+        "menu content"
+        "footer footer";
+}
+
+/* --- Áreas --- */
+.menu {
+    grid-area: menu;
+    background-color: var(--color-sand);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 1rem 0;
+}
+
+.menu button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--color-creme);
+    border: 2px solid var(--color-olive);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu button:hover {
+    background-color: var(--color-olive);
+    color: white;
+}
+
+.content {
+    grid-area: content;
+    background-color: var(--color-creme);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--color-olive);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* --- Secciones internas --- */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Full Bleed */
+.img-full {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Six Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: var(--color-grey);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+h1{
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 50px;
+        grid-template-areas:
+            "menu"
+            "content"
+            "footer";
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+}
